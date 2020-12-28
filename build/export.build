@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libcis17a/
+}
+
+export $out_root/libcis17a/$import.target
