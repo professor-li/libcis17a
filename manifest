@@ -3,6 +3,7 @@ name: libcis17a
 version: 0.1.0-a.0.z
 summary: libcis17a
 license: other: proprietary ; Not free/open source.
+description-file: README.md
 url: https://example.org/libcis17a
 email: te.li@mvc.edu
 depends: * build2 >= 0.13.0

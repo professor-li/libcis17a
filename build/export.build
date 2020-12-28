@@ -3,4 +3,4 @@ $out_root/
   include libcis17a/
 }
 
-export $out_root/libcis17a/$import.target
+export $($out_root/libcis17a/:export_target)
