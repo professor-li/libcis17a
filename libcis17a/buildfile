@@ -1,7 +1,7 @@
 ./: liba{cis17a-modules}
 
 dir       = release/
-format    = $dir/format.ifc
+format    = $dir/cis17a.format.ifc
 
 bmia{$format}: fsdir{$dir}
 
@@ -13,9 +13,9 @@ $dir/liba{cis17a}: install = false
 export_target = $out_base/$dir/liba{cis17a} $out_base/liba{cis17a-modules}
 
 liba{cis17a-modules}: hxx{*}
-bmia{$format}:      mxx{format}
+bmia{$format}:      mxx{cis17a-format}
 
-mxx{format}@./:      cxx.module_name = cis17a.format
+mxx{cis17a-format}@./:      cxx.module_name = cis17a.format
 
 cxx.poptions =+ "-I$out_root" "-I$src_root"
 

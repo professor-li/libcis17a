@@ -15,4 +15,4 @@ mxx{*}: extension = cppm
 test.target = $cxx.target
 
 if ($cxx.class == 'msvc')
-  cc.coptions += /wd5211
+  cxx.coptions += /wd5211
