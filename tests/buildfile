@@ -1,0 +1,4 @@
+import libs = libcis17a%liba{cis17a-modules}
+
+exe{driver}: cxx{driver} $libs
+exe{driver}: file{test.out}: test.stdout = true

@@ -6,6 +6,7 @@ license: other: proprietary ; Not free/open source.
 description-file: README.md
 url: https://example.org/libcis17a
 email: te.li@mvc.edu
+build: msvc-16.6+
 requires: c++20
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0

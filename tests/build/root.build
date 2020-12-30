@@ -1,0 +1,16 @@
+cxx.std = experimental
+
+using cxx
+
+assert $cxx.features.modules 'compiler does not support modules'
+
+cxx{*}: extension = cpp
+
+if ($cxx.class == 'msvc')
+  cc.coptions += /wd5211
+
+# Every exe{} in this subproject is by default a test.
+exe{*}: test = true
+
+# Specify the test target for cross-testing.
+test.target = $cxx.target
